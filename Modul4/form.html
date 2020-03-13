@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Tampilan Form | 17-23</title>
+</head>
+<body>
+    <form action="#">
+        <table>
+            <tr>
+                <td>Username :</td>
+                <td><input type="text" name="username" id="username" placeholder="&nbsp username"></td>
+            </tr>
+            <tr>
+                <td>Password :</td>
+                <td><input type="password" name="password" id="password" placeholder="&nbsp password"></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin :</td>
+                <td>
+                    <input type="radio" name="jk" id="laki" value="Laki-laki"> Laki-laki
+                    <input type="radio" name="jk" id="perempuan" value="Perempuan"> Perempuan 
+                </td>
+            </tr>
+            <tr>
+                <td>Hobby :</td>
+                <td>
+                    <input type="checkbox" name="coding" id="coding" value="Coding"> Coding
+                    <input type="checkbox" name="design" id="design" value="Design"> Design
+                </td>
+            </tr>
+            <tr>
+                <td>Asal :</td>
+                <td>
+                    <select name="asal" id="asal_lh">
+                        <option value="bali">Bali</option>
+                        <option value="jawa">Jawa</option>
+                        <option value="sumatra">Sumatra</option>
+                        <option value="kalimantan">Kalimantan</option>
+                        <option value="sulawesi">Sulawesi</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Bio :</td>
+                <td><textarea name="desc" id="desc" cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td></td><td>
+                    <div class="sub-button" style="margin-left: 20px;">
+                        <input type="submit" value="Submit!" style="background-color: lightcoral; border-radius: 10px;
+                        font-size: 18px; color: white; padding: 8px 15px;">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tugas Modul 7 Kalkulator</title>
+	<style>
+        h1,h5{
+            text-align: center;
+        }
+        table {
+            border : none;
+            border-collapse: collapse;
+            margin: auto;
+        }
+        td{
+            padding: 5px;
+            border: none;
+        }
+        input[type=text]{
+            padding: 10px;
+            width: 410px;
+            border-style: solid;
+            text-align: right;
+            font-size: 16px;
+        }
+        input[type=text]:disabled{
+            background-color: white;
+        }
+        .button {
+            width: 100px;
+            height: 40px;
+            background-color: #2d87fc;
+            border: none;
+            color: white;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .button:hover {background-color: #3e8e41}
+
+        .button:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+        }
+        .opr{
+                background-color: #555555;
+        }
+        .clr{
+            background-color: #f44336;;
+        }
+        .hsl{
+            background-color: #4CAF50;
+        }
+    </style>
+</head>
+<body style="background-color:#2d2d2d;">
+    <h1 style="color:white">Kalkulator Modul 7</h1>
+	<table>
+		<tr>
+			<td colspan="5">
+				<input type="text" disabled id="output" value="0">
+			</td>
+		</tr>
+		<tr>
+			<td><button class="button" onclick="button('1')">1</button></td>
+			<td><button class="button" onclick="button('2')">2</button></td>
+			<td><button class="button" onclick="button('3')">3</button></td>
+			<td><button class="button opr" onclick="button_opr(1)">*</button></td>
+		</tr>
+		<tr>
+			<td><button class="button" onclick="button('4')">4</button></td>
+			<td><button class="button" onclick="button('5')">5</button></td>
+			<td><button class="button" onclick="button('6')">6</button></td>
+			<td><button class="button opr" onclick="button_opr(2)">/</button></td>
+		</tr>
+		<tr>
+			<td><button class="button" onclick="button('7')">7</button></td>
+			<td><button class="button" onclick="button('8')">8</button></td>
+			<td><button class="button" onclick="button('9')">9</button></td>
+			<td><button class="button opr" onclick="button_opr(3)">-</button></td>
+		</tr>
+		<tr>
+			<td><button class="button" onclick="button('0')">0</button></td>
+			<td><button class="button" onclick="koma()">.</button></td>
+			<td><button class="button clr" onclick="clr()">C</button></td>
+			<td><button class="button opr" onclick="button_opr(4)">+</button></td>
+		</tr>
+		<tr>
+			<td colspan="5"><button class="button hsl" style="width: 100%" onclick="hitung()">=</button></td>
+		</tr>
+    </table>
+	<script type="text/javascript" src="calc.js"></script>
+</body>
+</html>
